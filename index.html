@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dmless Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🔗 Dmless Dashboard</h1>
+        <div class="metrics">
+            <div id="total">Applied: 0</div>
+            <div id="knocked">Knocked: 0</div>
+            <div id="shortlisted">Shortlisted: 0</div>
+        </div>
+        <h2>Create Job</h2>
+        <form id="jobForm">
+            <input id="role" placeholder="Job Role">
+            <textarea id="jd" placeholder="JD"></textarea>
+            <div id="mcqs"></div>
+            <button type="submit">Generate Link</button>
+        </form>
+        <div id="link"></div>
+        <h2>Applications</h2>
+        <table id="appsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Resume</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
